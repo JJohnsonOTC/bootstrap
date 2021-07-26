@@ -1,7 +1,38 @@
+/* ================================
+      Author: Jeff Johnson
+      Date: 07/24/21
+      Project: Bootstrap B&B
+      File Name: styles.css
+   ================================ */
 
+   /* ================================
+         Color Scheme Variables
+      ================================ */
+
+:root {
+  --primary: #69D2E7;
+  --secondary: #F38630;
+  --tertiary: #DBA984;
+  --quadernary: #A7DBD8;
+}
+
+/* ================================
+        Body Styling & Format
+   ================================ */
 a {
   text-decoration: none;
 
+}
+body {
+  background-color: var(--quadernary);
+}
+.carousel-slide {
+  background-color: var(--quadernary)
+}
+.container {
+  filter: drop-shadow(0 0 0.75rem #2B4141 );
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 .navbar-nav {
   width: 100%;
@@ -19,17 +50,111 @@ a {
   color: inherit;
 }
 .active {
-  background-color: #00FFFF;
+  background-color:var(--primary);
   border-radius: 10px;
   color: rgb(0,0,0);
 }
 .nav-item:hover {
-  background-color: #FFA500;
+  background-color:var(--secondary);
   border-radius: 10px;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(0,0,0);
 }
+.welcome {
+    background-color: var(--tertiary);
+    color: white;
+}
+.welcome p {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 8px;
+  text-align: justify;
+}
+.form-bg {
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.form-bg h1 {
+  text-align: center;
+}
+.contact-col {
+  padding: 15px;
+}
+.separator {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.div-description {
+  color: black;
+
+}
+hr {
+  width: 70%;
+  border-top: 3px solid rgb(255,255,255);
+  margin: auto;
+}
+footer > .footer .footer-div {
+  color: white;
+  padding-top: 20px;
+}
+.footer-div i {
+  font-size: 1.6rem;
+}
+ul {
+  list-style-type: none;
+}
+.social {
+  color: white;
+}
+.contact {
+  text-decoration: none;
+  color: white;
+}
+.contact-col .g-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer {
+  padding-top: 20px;
+}
+.card {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.div-rooms {
+  background-color: var(--secondary);
+  color: white;
+}
+.div-rooms h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.div-description {
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.div-description p {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+.btn {
+  background-color: var(--primary);
+}
+.btn:hover {
+  background-color: var(--secondary);
+}
+h1, h2, h3, h4 {
+  font-family: 'Bradley Hand', 'Times New Roman', serif;
+}
+/* ================================
+      Background Images for 768px and above
+   ================================ */
 @media only screen and (min-width: 768px) {
     .amenities {
       background-image: url(../images/background.png);
@@ -38,4 +163,11 @@ a {
       background-size: cover;
       font-weight: bold;
     }
+    body {
+      background-image: url(../images/beach.jpg);
+
+    }
+
+
+
 }

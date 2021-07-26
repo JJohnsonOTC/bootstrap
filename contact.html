@@ -16,6 +16,7 @@
     <title>Contact Us - Kailua Kove Bed & Breakfast</title>
   </head>
   <body>
+    
     <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid sticky-top">
           <div class="container-fluid">
@@ -40,14 +41,16 @@
             </div>
           </div>
         </nav>
-    <div class="container">
+    <div class="container form-bg">
       <h1>Contact Us</h1>
+
     <!-- grid to have form and google map SxS -->
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-between">
+        <div class="col-md-7 contact-col">
+
           <!-- Customer contact form -->
           <form class="row g-3">
-            <p>For booking &/or reservation requests, please email us & provide the
+            <p>For booking and/or reservation requests, please email us & provide the
               number of nights you wish to stay & your check out day & date along
               with any questions you may have. Phone numbers are requested in case
               of any email address errors for us to be able to reply promptly to you. </p>
@@ -72,35 +75,55 @@
               <input type="text" class="form-control" id="inputCity" placeholder="City" aria-label="City">
             </div>
             <div class="col-md-4">
-              <select id="inputState" class="form-select" aria-label="State">
-                <option selected>Choose State...</option>
-                <option>...</option>
-              </select>
+              <input type="text" class="form-control" id="inputState" placeholder="State" aria-label="State">
             </div>
             <div class="col-md-2">
               <input type="text" class="form-control" id="inputZip" placeholder="Zip" aria-label="Zip Code">
             </div>
             <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-info">Get Rates & Availability</button>
+              <button type="submit" class="btn btn-info">&nbsp; Submit &nbsp;</button>
             </div>
           </form>
           </div>
-          <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.185087411384!2d-157.74923348472683!3d21.421968785786692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0015399eb53f0b%3A0xf8b93ccbb6bb3ebe!2s804%20Mokapu%20Rd%2C%20Kailua%2C%20HI%2096734!5e0!3m2!1sen!2sus!4v1626962545699!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- google map inserted -->
+          <div class="col-md-5 contact-col">
+            <br><br>
+            <div class="ratio" style="--bs-aspect-ratio: 50%;">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.185087411384!2d-157.74923348472683!3d21.421968785786692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0015399eb53f0b%3A0xf8b93ccbb6bb3ebe!2s804%20Mokapu%20Rd%2C%20Kailua%2C%20HI%2096734!5e0!3m2!1sen!2sus!4v1626962545699!5m2!1sen!2sus"  allowfullscreen="" loading="lazy"></iframe>
+              </div>
           </div>
         </div>
-
     </div>
 
-
+    <!-- final message on page before footer -->
+    <div class="container separator d-none d-md-block">
+      <br>
+      <h1>Mahalo...</h1>
+      <h2>See you soon!</h2>
+      <br>
+    </div>
+<!-- footer -->
+    <div class="container-fluid bottom">
+      <footer class="bg-dark">
+      <div class="container-fluid row row-cols-1 row-cols-md-2 footer justify-content-evenly">
+        <div class="col-md-4 footer-div">
+            <p>Kailua Kove Bed & Breakfast <br>
+            804 Mokapu Road <br>
+            Kailua, HI 96734</p>
+          <a href="mailto:paradisepalmbnb@gmail.com" class="contact">Email: paradisepalm@gmail.com</a><br>
+          <a href="tel:+18082611431" class="contact">Phone: (808) 261-1431</a>
+        </div>
+        <div class="col-md-4 footer-div">
+          <p>Follow us on social media! &nbsp;</p>
+          <a href="#"><i class="social fab fa-facebook-square">&nbsp;</i></a>
+          <a href="#"><i class="social fab fa-instagram">&nbsp;</i></a><br><br><br>
+          <p class ="legal">Kailua Kove Bed & Breakfast &copy; 2021</p>
+        </div>
+      </div>
+      </footer>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
